@@ -1,5 +1,6 @@
-mod character;
+use rustysrlib;
+
 fn main() {
-    character::init_metatypes();
+    rustysrlib::character::init_metatypes();
     println!("Hello, world!");
 }

@@ -49,17 +49,18 @@ impl Character {
   }  
 }
 
-#[derive(Enum, IntoEnumIterator, Copy, Clone)]
+#[derive(Enum, IntoEnumIterator, Copy, Clone, Debug)]
 pub enum Attributes {
   Body,
 }
 
+#[derive(Debug)]
 pub struct AttributeRanges {
-  min: u32,
-  max: u32,
+  pub min: u32,
+  pub max: u32,
 }
 
-#[derive(Enum)]
+#[derive(Enum, Debug)]
 pub enum MetaTypes {
   Human,
 }
