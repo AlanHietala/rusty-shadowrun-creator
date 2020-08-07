@@ -7,6 +7,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "06e97b4e522f9e55523001238ac59d13a8603af57f69980de5d8de4bbbe8ada6"
 
 [[package]]
+name = "enum-iterator"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c79a6321a1197d7730510c7e3f6cb80432dfefecb32426de8cea0aa19b4bb8d7"
+dependencies = [
+ "enum-iterator-derive",
+]
+
+[[package]]
+name = "enum-iterator-derive"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e94aa31f7c0dc764f57896dc615ddd76fc13b0d5dca7eb6cc5e018a5a09ec06"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "enum-map"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -46,9 +66,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust_shadowrun_creator"
+name = "rusty_shadowrun_creator"
 version = "0.1.0"
 dependencies = [
+ "enum-iterator",
  "enum-map",
 ]
 
